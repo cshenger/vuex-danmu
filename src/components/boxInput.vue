@@ -16,9 +16,9 @@
     methods: {
       addText (e) {
         e.preventDefault()
-        let tcvalText = document.getElementById('tcval').value.trim()
-        if (tcvalText !== '') {
-          this.$store.commit('addText', { tcvalText })
+        var text = document.getElementById('tcval').value.trim()
+        if (text.trim()) {
+          this.$store.commit('addText', { text })
           document.getElementById('tcval').value = ''
           document.getElementById('tclbtn').setAttribute('disabled', true)
         }

@@ -14,8 +14,12 @@ export default {
   name: 'board',
   data () {
     return {
-      bgImgUrl: 'url(' + bgImg + ')',
-      listArr: this.$store.state.listArr
+      bgImgUrl: 'url(' + bgImg + ')'
+    }
+  },
+  computed: {
+    listArr () {
+      return this.$store.state.listArr
     }
   },
   components: {

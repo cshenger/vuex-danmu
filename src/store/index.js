@@ -12,6 +12,7 @@ const state = {
 const mutations = {
   addText (state, { text }) {
     state.listArr.push(text)
+    window.localStorage.setItem(DANMU_VUE, JSON.stringify(state.listArr))
   }
 }
 
